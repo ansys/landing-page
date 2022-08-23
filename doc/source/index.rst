@@ -11,6 +11,7 @@
    ..
       PyFluent-Parametric <https://fluentparametric.docs.pyansys.com/>
       PyFluent-Visualization <https://fluentvisualization.docs.pyansys.com/>
+
    PyPIM <https://pypim.docs.pyansys.com/>
    Granta MI BoM Analytics <https://grantami.docs.pyansys.com/>
    Shared Components <https://shared.docs.pyansys.com/>
