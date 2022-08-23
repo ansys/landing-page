@@ -1,0 +1,18 @@
+ANSYS
+Ansys
+ansys
+postprocessing
+PyAnsys
+Pythonic
+PyAEDT
+DPF
+PyMAPDL
+PyMAPDL Reader
+PyDPF-Core
+PyDPF-Post
+PyDPF
+PyFluent
+PyFluent-Parametric
+PyFluent-Visualization
+PyPIM
+Granta MI BoM Analytics
