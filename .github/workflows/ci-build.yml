@@ -68,6 +68,7 @@ jobs:
 
       - name: Build Documentation
         run: |
+          pip install -r requirements.txt
           make -C doc html
 
       - name: Upload Documentation
