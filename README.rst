@@ -112,8 +112,8 @@ PyFluent-Parametric
    pip install ansys-fluent-parametric
 
 - `PyFluent-Parametric Documentation <https://fluentparametric.docs.pyansys.com/>`_
-- `PyFluent PyPI <https://pypi.org/project/ansys-fluent-parametric>`_
-- `PyFluent GitHub <https://github.com/pyansys/pyfluent-parametric/>`_
+- `PyFluent-Parametric PyPI <https://pypi.org/project/ansys-fluent-parametric>`_
+- `PyFluent-Parametric GitHub <https://github.com/pyansys/pyfluent-parametric/>`_
 
 
 PyFluent-Visualization
@@ -123,9 +123,9 @@ PyFluent-Visualization
 
    pip install ansys-fluent-visualization
 
-- `PyFluent Documentation <https://fluentvisualization.docs.pyansys.com/>`_
-- `PyFluent PyPI <https://pypi.org/project/ansys-fluent-visualization>`_
-- `PyFluent GitHub <https://github.com/pyansys/pyfluentvisualization/>`_
+- `PyFluent-Visualization Documentation <https://fluentvisualization.docs.pyansys.com/>`_
+- `PyFluent-Visualization PyPI <https://pypi.org/project/ansys-fluent-visualization>`_
+- `PyFluent-Visualization GitHub <https://github.com/pyansys/pyfluentvisualization/>`_
 
 
 PyPIM
