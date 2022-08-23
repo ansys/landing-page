@@ -1,0 +1,525 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>PyAnsys &#8212; PyAnsys</title>
+    
+<script>
+  document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+  document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"
+</script>
+
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+
+
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/ansys_sphinx_theme.css" />
+
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
+
+    
+        <link href="_static/css/breadcrumbs.css" rel="stylesheet">
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="docsearch:language" content="en">
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+    <div class="bd-header-announcement container-fluid" id="banner">
+      
+
+    </div>
+
+    
+    
+    <nav class="bd-header navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="bd-header__inner container-xl">
+
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+    <img src="_static/pyansys-logo-black-cropped.png" class="logo__image only-light" alt="Logo image">
+    <img src="_static/pyansys-logo-black-cropped.png" class="logo__image only-dark" alt="Logo image">
+  
+  
+</a>
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="fas fa-bars"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference external nav-link" href="https://aedt.docs.pyansys.com/">
+  PyAEDT
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference external nav-link" href="https://dpf.docs.pyansys.com/">
+  PyDPF-Core
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference external nav-link" href="https://post.docs.pyansys.com/">
+  PyDPF-Post
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference external nav-link" href="https://mapdl.docs.pyansys.com/">
+  PyMAPDL
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference external nav-link" href="https://reader.docs.pyansys.com/">
+  PyMAPDL Reader
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference external nav-link" href="https://fluent.docs.pyansys.com/">
+  PyFluent
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference external nav-link" href="https://fluentparametric.docs.pyansys.com/">
+  PyFluent-Parametric
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference external nav-link" href="https://fluentvisualization.docs.pyansys.com/">
+  PyFluent-Visualization
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference external nav-link" href="https://pypim.docs.pyansys.com/">
+  PyPIM
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference external nav-link" href="https://grantami.docs.pyansys.com/">
+  Granta MI BoM Analytics
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference external nav-link" href="https://shared.docs.pyansys.com/">
+  Shared Components
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <span id="theme-switch" class="btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/pyansys" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+    
+        <div class="container-xl">
+    <div class="row">
+        <div class="col-12 col-md-3" id="breadcrumbs-spacer"></div>
+        <div class="col-12 col-md-11 col-xl-9" id="breadcrumbs">
+          
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+    
+    
+
+        <li class="nav-item nav-item-this"><a href="">PyAnsys</a></li> 
+      </ul>
+    </div>
+        </div>
+  </div>
+</div>
+    
+
+
+    <div class="bd-container container-xl">
+      <div class="bd-container__inner row">
+          
+
+<!-- Only show if we have sidebars configured, else just a small margin  -->
+<div class="bd-sidebar-primary col-12 col-md-3 bd-sidebar">
+  <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    
+  </div>
+</nav>
+  </div>
+  <div class="sidebar-end-items">
+  </div>
+</div>
+
+
+          
+
+
+<div class="bd-sidebar-secondary d-none d-xl-block col-xl-2 bd-toc">
+  
+    
+    <div class="toc-item">
+      
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#package-installation">
+   Package installation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pyaedt">
+     PyAEDT
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pydpf-core">
+     PyDPF-Core
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pydpf-post">
+     PyDPF-Post
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pymapdl">
+     PyMAPDL
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pymapdl-reader">
+     PyMAPDL Reader
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pyfluent">
+     PyFluent
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pyfluent-parametric">
+     PyFluent-Parametric
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pyfluent-visualization">
+     PyFluent-Visualization
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pypim">
+     PyPIM
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#granta-mi-bom-analytics">
+     Granta MI BoM Analytics
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Shared components
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#license-and-acknowledgments">
+   License and acknowledgments
+  </a>
+ </li>
+</ul>
+
+</nav>
+    </div>
+    
+    <div class="toc-item">
+      
+    </div>
+    
+  
+</div>
+
+
+          
+          
+          <div class="bd-content col-12 col-md-9 col-xl-7">
+              
+              <article class="bd-article" role="main">
+                
+  <div class="toctree-wrapper compound">
+</div>
+<section id="pyansys">
+<h1>PyAnsys<a class="headerlink" href="#pyansys" title="Permalink to this heading">#</a></h1>
+<p>Welcome to the PyAnsys project. While this project originated as a single <code class="docutils literal notranslate"><span class="pre">pyansys</span></code> package,
+it is now a collection of many Python packages for using Ansys products through Python:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://aedt.docs.pyansys.com/">PyAEDT</a> : Pythonic interface to AEDT (Ansys Electronic Desktop)</p></li>
+<li><p><a class="reference external" href="https://dpf.docs.pyansys.com/">PyDPF-Core</a> : Pythonic interface to DPF (Data Processing Framework) for building more advanced and customized workflows</p></li>
+<li><p><a class="reference external" href="https://post.docs.pyansys.com/">PyDPF-Post</a> : Pythonic interface to DPF’s postprocessing toolbox for manipulating and transforming simulation data</p></li>
+<li><p><a class="reference external" href="https://mapdl.docs.pyansys.com/">PyMAPDL</a> : Pythonic interface to MAPDL</p></li>
+<li><p><a class="reference external" href="https://reader.docs.pyansys.com/">PyMAPDL Reader</a>: Pythonic interface to read legacy MAPDL result files (MAPDL 14.5 and later)</p></li>
+<li><p><a class="reference external" href="https://fluent.docs.pyansys.com/">PyFluent</a> : Pythonic interface to Ansys Fluent</p></li>
+<li><p><a class="reference external" href="https://fluentparametric.docs.pyansys.com/">PyFluent-Parametric</a> : Pythonic interface to Ansys Fluent parametric workflows</p></li>
+<li><p><a class="reference external" href="https://fluentvisualization.docs.pyansys.com/">PyFluent-Visualization</a> : Pythonic interface to visualize Ansys Fluent simulations using Python</p></li>
+<li><p><a class="reference external" href="https://pypim.docs.pyansys.com/">PyPIM</a>: Pythonic interface to communicate with the PIM (Product Instance Management) API</p></li>
+<li><p><a class="reference external" href="https://grantami.docs.pyansys.com/">Granta MI BoM Analytics</a>: Pythonic interface to Granta MI BoM Analytics services</p></li>
+<li><p><a class="reference external" href="https://shared.docs.pyansys.com/">Shared Components</a>: Shared software components to enable package interoperability and minimize maintenance</p></li>
+</ul>
+<p>Much effort is underway to continue expanding and developing packages in the
+<a class="reference external" href="https://github.com/pyansys/">PyAnsys GitHub</a> account. On the <code class="docutils literal notranslate"><span class="pre">Issues</span></code> page
+for each package, you can post issues and request new features. You can also email
+questions to <a class="reference external" href="mailto:pyansys&#46;support&#37;&#52;&#48;ansys&#46;com">PyAnsys Support</a>.</p>
+<section id="package-installation">
+<h2>Package installation<a class="headerlink" href="#package-installation" title="Permalink to this heading">#</a></h2>
+<p>You must install the applicable packages for an Ansys product on your local machine.
+While there are multiple ways to install a Python package, using <a class="reference external" href="https://pypi.org/project/pip/">pip</a>, the package installer for Python, is recommended.
+For your convenience, this section provides <code class="docutils literal notranslate"><span class="pre">pip</span></code> commands for downloading
+and installing the most recent PyAnsys packages and links to comprehensive resources.</p>
+<section id="pyaedt">
+<h3>PyAEDT<a class="headerlink" href="#pyaedt" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">pyaedt</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://aedt.docs.pyansys.com/">PyAEDT Documentation</a></p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/pyaedt/">PyAEDT PyPI</a></p></li>
+<li><p><a class="reference external" href="https://github.com/pyansys/PyAEDT/">PyAEDT GitHub</a></p></li>
+</ul>
+</section>
+<section id="pydpf-core">
+<h3>PyDPF-Core<a class="headerlink" href="#pydpf-core" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ansys</span><span class="o">-</span><span class="n">dpf</span><span class="o">-</span><span class="n">core</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://dpf.docs.pyansys.com/">DPF-Core Documentation</a></p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/ansys-dpf-core/">DPF-Core PyPI</a></p></li>
+<li><p><a class="reference external" href="https://github.com/pyansys/pydpf-core">DPF-Core GitHub</a></p></li>
+</ul>
+</section>
+<section id="pydpf-post">
+<h3>PyDPF-Post<a class="headerlink" href="#pydpf-post" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ansys</span><span class="o">-</span><span class="n">dpf</span><span class="o">-</span><span class="n">post</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://post.docs.pyansys.com/">DPF-Post Documentation</a></p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/ansys-dpf-post/">DPF-Post PyPI</a></p></li>
+<li><p><a class="reference external" href="https://github.com/pyansys/pydpf-post">DPF-Post GitHub</a></p></li>
+</ul>
+</section>
+<section id="pymapdl">
+<h3>PyMAPDL<a class="headerlink" href="#pymapdl" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ansys</span><span class="o">-</span><span class="n">mapdl</span><span class="o">-</span><span class="n">core</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://mapdl.docs.pyansys.com/">PyMAPDL Documentation</a></p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/ansys-mapdl-core/">PyMAPDL PyPI</a></p></li>
+<li><p><a class="reference external" href="https://github.com/pyansys/pymapdl/">PyMAPDL GitHub</a></p></li>
+</ul>
+</section>
+<section id="pymapdl-reader">
+<h3>PyMAPDL Reader<a class="headerlink" href="#pymapdl-reader" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ansys</span><span class="o">-</span><span class="n">mapdl</span><span class="o">-</span><span class="n">reader</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://reader.docs.pyansys.com/">Legacy PyMAPDL Reader Documentation</a></p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/ansys-mapdl-reader/">Legacy PyMAPDL Reader PyPI</a></p></li>
+<li><p><a class="reference external" href="https://github.com/pyansys/pymapdl-reader">Legacy PyMAPDL Reader GitHub</a></p></li>
+</ul>
+</section>
+<section id="pyfluent">
+<h3>PyFluent<a class="headerlink" href="#pyfluent" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ansys</span><span class="o">-</span><span class="n">fluent</span><span class="o">-</span><span class="n">core</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://fluent.docs.pyansys.com/">PyFluent Documentation</a></p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/ansys-fluent-core">PyFluent PyPI</a></p></li>
+<li><p><a class="reference external" href="https://github.com/pyansys/pyfluent/">PyFluent GitHub</a></p></li>
+</ul>
+</section>
+<section id="pyfluent-parametric">
+<h3>PyFluent-Parametric<a class="headerlink" href="#pyfluent-parametric" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ansys</span><span class="o">-</span><span class="n">fluent</span><span class="o">-</span><span class="n">parametric</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://fluentparametric.docs.pyansys.com/">PyFluent-Parametric Documentation</a></p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/ansys-fluent-parametric">PyFluent-Parametric PyPI</a></p></li>
+<li><p><a class="reference external" href="https://github.com/pyansys/pyfluent-parametric/">PyFluent-Parametric GitHub</a></p></li>
+</ul>
+</section>
+<section id="pyfluent-visualization">
+<h3>PyFluent-Visualization<a class="headerlink" href="#pyfluent-visualization" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ansys</span><span class="o">-</span><span class="n">fluent</span><span class="o">-</span><span class="n">visualization</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://fluentvisualization.docs.pyansys.com/">PyFluent-Visualization Documentation</a></p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/ansys-fluent-visualization">PyFluent-Visualization PyPI</a></p></li>
+<li><p><a class="reference external" href="https://github.com/pyansys/pyfluentvisualization/">PyFluent-Visualization GitHub</a></p></li>
+</ul>
+</section>
+<section id="pypim">
+<h3>PyPIM<a class="headerlink" href="#pypim" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ansys</span><span class="o">-</span><span class="n">platform</span><span class="o">-</span><span class="n">instancemanagement</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://pypim.docs.pyansys.com/">PyPIM Documentation</a></p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/ansys-platform-instancemanagement/">PyPIM PyPI</a></p></li>
+<li><p><a class="reference external" href="https://github.com/pyansys/pypim/">PyPIM GitHub</a></p></li>
+</ul>
+</section>
+<section id="granta-mi-bom-analytics">
+<h3>Granta MI BoM Analytics<a class="headerlink" href="#granta-mi-bom-analytics" title="Permalink to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ansys</span><span class="o">-</span><span class="n">grantami</span><span class="o">-</span><span class="n">bomanalytics</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://grantami.docs.pyansys.com/">Granta MI BoM Analytics Documentation</a></p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/ansys-grantami-bomanalytics/">Granta MI BoM Analytics PyPI</a></p></li>
+<li><p><a class="reference external" href="https://github.com/pyansys/grantami-bomanalytics/">Granta MI BoM Analytics GitHub</a></p></li>
+</ul>
+</section>
+<section id="id1">
+<h3>Shared components<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<p>The PyAnsys project publishes and consumes shared software components that enable
+interoperability between PyAnsys packages and minimize maintenance. For more
+information, see the <a class="reference external" href="https://shared.docs.pyansys.com/">Shared Components documentation</a>.</p>
+<p>The OpenAPI Common library is a shared component. Here is the command for downloading
+and installing the most recent package and links to its comprehensive resources:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ansys</span><span class="o">-</span><span class="n">openapi</span><span class="o">-</span><span class="n">common</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://openapi.docs.pyansys.com/index.html/">OpenAPI Common Documentation</a></p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/ansys-openapi-common/">OpenAPI Common PyPI</a></p></li>
+<li><p><a class="reference external" href="https://github.com/pyansys/openapi-common/">OpenAPI Common GitHub</a></p></li>
+</ul>
+</section>
+</section>
+<section id="license-and-acknowledgments">
+<h2>License and acknowledgments<a class="headerlink" href="#license-and-acknowledgments" title="Permalink to this heading">#</a></h2>
+<p>All PyAnsys libraries are licensed under the MIT license.</p>
+<p>PyAnsys libraries make no commercial claim over Ansys whatsoever.
+These libraries extend the functionality of Ansys products by
+adding Python interfaces to legally obtained software products
+without changing the core behaviors or licenses of the original
+software.</p>
+<p>For more information about Ansys products, visit the <a class="reference external" href="https://www.ansys.com/">Ansys web site</a>.</p>
+</section>
+</section>
+
+
+              </article>
+              
+
+              
+          </div>
+          
+      </div>
+    </div>
+
+  
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695"></script>
+
+<footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    <p class="copyright">
+    &copy; Copyright (c) 2022 ANSYS, Inc. All rights reserved.<br>
+</p>
+  </div>
+  
+  <div class="footer-item">
+    <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.1.1.<br>
+</p>
+  </div>
+  
+</div>
+</footer>
+  </body>
+</html>
