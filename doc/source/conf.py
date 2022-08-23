@@ -21,13 +21,21 @@ html_theme_options = {
     "show_breadcrumbs": True,
 }
 
+html_static_path = ['_static']
+html_css_files = [
+    "css/custom.css",
+]
+
 html_short_title = html_title = "PyAnsys"
 
 # Sphinx extensions
-extensions = []
+extensions = [
+    "sphinx_design",
+]
 
 # The suffix(es) of source filenames.
 source_suffix = ".rst"
 
 # The master toctree document.
 master_doc = "index"
+

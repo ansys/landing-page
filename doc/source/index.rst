@@ -1,20 +1,51 @@
-.. toctree::
-   :hidden:
-   :maxdepth: 3
+**Date**: |today|
 
-   PyAEDT <https://aedt.docs.pyansys.com/>
-   PyDPF-Core <https://dpf.docs.pyansys.com/>
-   PyDPF-Post <https://post.docs.pyansys.com/>
-   PyMAPDL <https://mapdl.docs.pyansys.com/>
-   PyMAPDL Reader <https://reader.docs.pyansys.com/>
-   PyFluent <https://fluent.docs.pyansys.com/>
-   PyFluent-Parametric <https://fluentparametric.docs.pyansys.com/>
-   PyFluent-Visualization <https://fluentvisualization.docs.pyansys.com/>
-   PyPIM <https://pypim.docs.pyansys.com/>
-   Granta MI BoM Analytics <https://grantami.docs.pyansys.com/>
-   Shared Components <https://shared.docs.pyansys.com/>
+*******
+PyAnsys
+*******
+Welcome to the PyAnsys project. While this project originated as a single pyansys package, 
+it is now a collection of many Python packages for using Ansys products through Python:
 
-..
-   Simply reuse the README.rst to avoid duplication
+.. grid:: 1 2 2 3
 
-.. include:: ../../README.rst
+    .. grid-item::
+        .. card:: PyAEDT
+            :img-top: _static/assets/pyaedt.png
+            :link: https://aedt.docs.pyansys.com/  
+             
+            Python library that interacts directly with the AEDT API to make scripting simpler.
+
+    .. grid-item::
+        .. card:: PyDPF-Core
+            :img-top: _static/assets/pydpf-core.png
+            :link: https://dpf.docs.pyansys.com 
+             
+            Read and transform finite element data across simulation domains, with powerful, scalable operators.
+
+    .. grid-item::
+        .. card:: pydpf-post
+            :img-top: _static/assets/pydpf-post.png
+            :link: https://post.docs.pyansys.com 
+             
+            Extract actionable insights from finite element simulation with a streamlined post-processing API.
+
+    .. grid-item::
+        .. card:: PyMAPDL
+            :img-top: _static/assets/pymapdl-2d.png
+            :link: https://mapdl.docs.pyansys.com 
+             
+            Best-in-class multi-physics simulation and equation solver, now accessible in Python.
+
+    .. grid-item::
+        .. card:: PyMAPDL Reader
+            :img-top: _static/assets/pymapdl-2d.png
+            :link: https://reader.docs.pyansys.com/ 
+             
+            Pythonic interface to read legacy MAPDL result files (MAPDL 14.5 and later)
+
+    .. grid-item::
+        .. card:: PyFluent
+            :img-top: _static/assets/intro.png
+            :link: https://fluent.docs.pyansys.com/ 
+             
+            Pythonic interface to Ansys Fluent
