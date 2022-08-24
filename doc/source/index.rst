@@ -60,7 +60,7 @@ it is now a collection of many Python packages for using Ansys products through 
             :img-top: _static/assets/pyfluent.png
             :link: https://fluentvisualization.docs.pyansys.com 
              
-            Pythonic interface to visualize Ansys Fluent simulations using Python
+            Pythonic interface to visualize Ansys Fluent simulations
 
     .. grid-item::
         .. card:: PyPIM
