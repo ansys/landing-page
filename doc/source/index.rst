@@ -1,5 +1,3 @@
-**Date**: |today|
-
 *******
 PyAnsys
 *******
@@ -23,8 +21,8 @@ it is now a collection of many Python packages for using Ansys products through 
             Read and transform finite element data across simulation domains, with powerful, scalable operators.
 
     .. grid-item::
-        .. card:: pydpf-post
-            :img-top: _static/assets/pydpf-post.png
+        .. card:: pyDPF-Post
+            :img-top: _static/assets/pydpf-core.png
             :link: https://post.docs.pyansys.com 
              
             Extract actionable insights from finite element simulation with a streamlined post-processing API.
@@ -45,21 +43,21 @@ it is now a collection of many Python packages for using Ansys products through 
 
     .. grid-item::
         .. card:: PyFluent
-            :img-top: _static/assets/intro.png
+            :img-top: _static/assets/pyfluent.png
             :link: https://fluent.docs.pyansys.com/ 
              
             Pythonic interface to Ansys Fluent
 
     .. grid-item::
         .. card:: PyFluent-Parametric
-            :img-top: _static/assets/intro.png
+            :img-top: _static/assets/pyfluent.png
             :link: https://fluentparametric.docs.pyansys.com/ 
              
             Pythonic interface to Ansys Fluent parametric workflows
 
     .. grid-item::
         .. card:: PyFluent-Visualization
-            :img-top: _static/assets/intro.png
+            :img-top: _static/assets/pyfluent.png
             :link: https://fluentvisualization.docs.pyansys.com 
              
             Pythonic interface to visualize Ansys Fluent simulations using Python
@@ -85,3 +83,9 @@ it is now a collection of many Python packages for using Ansys products through 
              
             Shared software components to enable package interoperability and minimize maintenance  
 
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :titlesonly:
+
+   getting_started

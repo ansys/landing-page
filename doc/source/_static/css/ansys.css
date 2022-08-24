@@ -3,7 +3,7 @@
 
 
 .docutils {
-    color: #0d0d0d;
+    color: var(--pst-color-inline-code);
     font-family: var(--pst-font-family-base);
     font-weight: 500;
     font-size: 100%;
@@ -20,6 +20,6 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    background-color: white !important;
+    background-color: var(--pst-color-background)!important;
     font-family: var(--pst-font-family-base)!important;
 }
