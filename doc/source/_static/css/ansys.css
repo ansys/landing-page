@@ -1,72 +1,25 @@
-:root {
-  --ansysGold: #FFB71B;
-  --ansysBronze: #C89211;
-  --pythonBlue: #3972a1;
-}
+@import "../design-style.4045f2051d55cab465a707391d5b2007.min.css";
+@import "../ansys-sphinx-theme.css";
 
-body {
- font-family: 'Source Sans Pro', sans-serif;
- color: black;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: var(--pythonBlue);
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
-}
-
-.sig-prename {
-    color: var(--ansysBronze);
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.sig-name {
-    color: var(--ansysBronze);
-    font-family: 'Source Sans Pro', sans-serif;
-}
 
 .docutils {
-    color: var(--ansysBronze);
-    font-family: "Source Code Pro", "Courier New", monospace;
-}
-
-.navbar-light {
-    background: black !important;
-}
-
-
-.navbar-light .navbar-nav .nav-link {
-    color: white;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.navbar-light:hover .navbar-nav:hover .nav-link:hover {
-    color: var(--ansysGold);
-}
-
-.navbar-nav>.active>.nav-link {
-    color: var(--ansysGold) !important;
-}
-
-a.headerlink:hover {
-    background-color: var(--pythonBlue);
-}
-
-a.headerlink {
-    /* background-color: var(--pythonBlue); */
-    color: var(--pythonBlue);
+    color: var(--pst-color-inline-code);
+    font-family: var(--pst-font-family-base);
+    font-weight: 500;
+    font-size: 100%;
 }
 
 
-@font-face {
-    font-family: "Source Sans Pro Light";
-    src: url(../fonts/SourceSansPro-Light.ttf);
+.sd-row-cols-lg-4>* {
+    flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    width: 25%;
 }
 
-@font-face {
-    font-family: "Source Sans Pro";
-    src: url(../fonts/SourceSansPro-Regular.ttf);
+.sd-sphinx-override, .sd-sphinx-override * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: var(--pst-color-background)!important;
+    font-family: var(--pst-font-family-base)!important;
 }

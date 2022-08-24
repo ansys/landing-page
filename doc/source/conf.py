@@ -1,7 +1,7 @@
 """Configuration file for docs.pyansys.com landing page."""
 from datetime import datetime
 
-from ansys_sphinx_theme import pyansys_logo_black
+from ansys_sphinx_theme import pyansys_logo_black, ansys_favicon
 
 project = "pyansys-landing"
 copyright = f"(c) {datetime.now().year} ANSYS, Inc. All rights reserved"
@@ -21,13 +21,25 @@ html_theme_options = {
     "show_breadcrumbs": True,
 }
 
+html_static_path = ['_static']
+
+
+html_css_files = [
+    "css/ansys.css",
+]
+
+html_favicon = ansys_favicon
+
 html_short_title = html_title = "PyAnsys"
 
 # Sphinx extensions
-extensions = []
+extensions = [
+    "sphinx_design",
+]
 
 # The suffix(es) of source filenames.
 source_suffix = ".rst"
 
 # The master toctree document.
 master_doc = "index"
+
