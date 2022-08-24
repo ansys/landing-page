@@ -13,8 +13,7 @@
 .sd-row-cols-lg-4>* {
     flex: 0 0 auto;
     -ms-flex: 0 0 auto;
-    width: 45%;
-    /* background-color: white; */
+    width: 25%;
 }
 
 .sd-sphinx-override, .sd-sphinx-override * {

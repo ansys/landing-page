@@ -6,7 +6,7 @@ PyAnsys
 Welcome to the PyAnsys project. While this project originated as a single ``pyansys`` package, 
 it is now a collection of many Python packages for using Ansys products through Python:
 
-.. grid:: 1 2 4 3
+.. grid:: 1 2 2 3
 
     .. grid-item::
         .. card:: PyAEDT
