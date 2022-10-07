@@ -23,11 +23,6 @@ html_theme_options = {
 
 html_static_path = ['_static']
 
-
-html_css_files = [
-    "css/ansys.css",
-]
-
 html_favicon = ansys_favicon
 
 html_short_title = html_title = "PyAnsys"
