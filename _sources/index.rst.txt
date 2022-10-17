@@ -21,7 +21,7 @@ it is now a collection of many Python packages for using Ansys products through 
             Read and transform finite element data across simulation domains, with powerful, scalable operators.
 
     .. grid-item::
-        .. card:: pyDPF-Post
+        .. card:: PyDPF-Post
             :img-top: _static/assets/pydpf-core.png
             :link: https://post.docs.pyansys.com 
              
