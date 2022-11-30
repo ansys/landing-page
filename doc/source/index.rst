@@ -70,6 +70,13 @@ it is now a collection of many Python packages for using Ansys products through 
             Pythonic interface to communicate with the PIM (Product Instance Management) API
 
     .. grid-item::
+        .. card:: PySeascape
+            :img-top: _static/assets/intro.png
+            :link: https://seascape.docs.pyansys.com/ 
+             
+            Pythonic interface to communicate with RedHawkSC and TotemSC
+
+    .. grid-item::
         .. card:: Granta MI BoM Analytics
             :img-top: _static/assets/intro.png
             :link: https://grantami.docs.pyansys.com/ 
