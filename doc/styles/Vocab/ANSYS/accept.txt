@@ -15,4 +15,5 @@ PyFluent
 PyFluent-Parametric
 PyFluent-Visualization
 PyPIM
+PySeascape
 Granta MI BoM Analytics
